@@ -25,3 +25,12 @@ Route::get('/json', function () {
 Route::get('/profile', "ProfileController@getInfo");
 
 Route::get('/{id}/name', "ProfileController@getName");
+
+Route::get('/json2', function () {
+    return [
+      ["Name"=>"BonuZz","Age"=>22],
+      ["Name"=>"Muto","Age"=>1]
+    ];
+
+    
+});
